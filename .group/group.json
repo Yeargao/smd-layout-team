@@ -6,13 +6,8 @@
   "remote": "origin",
   "validation_commands": [
     [
-      "python",
-      "-m",
-      "unittest",
-      "discover",
-      "-s",
-      "tests",
-      "-v"
+      "node",
+      "--test"
     ]
   ]
 }
