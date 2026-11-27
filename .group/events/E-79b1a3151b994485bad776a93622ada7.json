@@ -1,0 +1,30 @@
+{
+  "protocol_version": "0.1",
+  "group_id": "G-01",
+  "event_id": "E-79b1a3151b994485bad776a93622ada7",
+  "event_type": "change_published",
+  "person_id": "P01",
+  "created_at": "2026-11-27T07:53:08.059132+00:00",
+  "branch": "people/P01/layout",
+  "payload": {
+    "change_id": "C-6eceb2e8423845caa45ed828c3764e5f",
+    "commit": "cb9f6c23d4bbb0cda3a9685f757631281cc3f935",
+    "base_commit": "81db91d402d6cd00e187e40725d247133ef8ae1f",
+    "branch": "people/P01/layout",
+    "summary": "P01 V1: smart initial layout and crossing minimization",
+    "checks": [
+      {
+        "argv": [
+          "node",
+          "--test"
+        ],
+        "exit_code": 0,
+        "status": "pass"
+      }
+    ],
+    "interface_changes": [],
+    "known_issues": [
+      "Straight-line crossing metrics; pending P02 routed edge evaluation"
+    ]
+  }
+}
