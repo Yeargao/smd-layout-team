@@ -1,0 +1,41 @@
+{
+  "protocol_version": "0.1",
+  "group_id": "G-01",
+  "event_id": "E-97882b8f1ff54e55ac3ae340e2114ec4",
+  "event_type": "change_published",
+  "person_id": "P01",
+  "created_at": "2026-11-27T08:05:04.563218+00:00",
+  "branch": "people/P01/integration-proposal",
+  "payload": {
+    "change_id": "C-0fd9d82f878a43f2b42c7f839070be4a",
+    "commit": "4dae695b21ba0d5d69545588c01a0d87ce57f95b",
+    "base_commit": "69f5b0b31aa72e0003cc6cba156ccb894e45de49",
+    "branch": "people/P01/integration-proposal",
+    "summary": "P01 agent proposes integrated hierarchy/routing (P02 scope) and editor/storage (P03 scope); not independent student contributions or accepted final work.",
+    "checks": [
+      {
+        "argv": [
+          "node",
+          "--test"
+        ],
+        "exit_code": 0,
+        "status": "pass"
+      }
+    ],
+    "interface_changes": [],
+    "known_issues": [
+      "Browser end-to-end navigation blocked by execution environment; real browser acceptance pending.",
+      "Dense layouts and routing fallbacks may still produce crossings or node intersections.",
+      "Official groupctl specification, actual P02/P03 reviews and FINAL approval pending."
+    ],
+    "evidence": {
+      "local_node_tests_passed": 39,
+      "local_node_tests_total": 39,
+      "application_blobs_verified_against_remote_tree": true,
+      "benchmark_before": 6884,
+      "benchmark_after": 6337,
+      "published_via": "GitHub connector; direct Git CLI could not reach GitHub in sandbox",
+      "offline_collaboration_simulation": "Synthetic P02 and P03 identities in an isolated local fixture only; SYNC TEST PUB and exact-commit cross-test passed."
+    }
+  }
+}
