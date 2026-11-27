@@ -35,6 +35,7 @@ try:
   a=center('A');b=center('B');d=center('D');x,y=screen(*b);page.mouse.move(x,y);page.mouse.down();page.mouse.move(x+15,y+25,steps=4);page.mouse.up();assert center('B')!=b;edited=center('B');assert center('A')==a and center('D')==d
   menu('R');assert node('B').count()==0 and node('R').count()==1;assert center('A')==a and center('D')==d;menu('R',True);assert center('B')==edited
   # Drag existing manual route handle then verify its point survives save.
+  edge=page.locator('[data-line="e1"]');ex,ey=edge.evaluate('(e)=>{const p=e.points;return [(p[0].x+p[1].x)/2,(p[0].y+p[1].y)/2]}');page.mouse.click(*screen(ex,ey));
   h=page.locator('[data-edge="e1"]').first; hx,hy=h.evaluate('(e)=>[+e.getAttribute("cx"),+e.getAttribute("cy")]');sx,sy=screen(hx,hy);page.mouse.move(sx,sy);page.mouse.down();page.mouse.move(sx+20,sy-24,steps=4);page.mouse.up();data=save();assert data['layout']['routes']['e1']['manual'];assert data['layout']['routes']['e1']['waypoints']
   # Add a nested region and node, then a directed edge to the new node.
   page.locator('#parent').select_option('R');page.locator('#addRegion').click();page.locator('#parent').select_option('R1');page.locator('#addNode').click();assert node('N1').count()==1
