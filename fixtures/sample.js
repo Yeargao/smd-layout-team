@@ -1,0 +1,1 @@
+export const sample = {nodes:[{id:'A',parentId:null},{id:'B',parentId:'R'},{id:'C',parentId:'R'},{id:'D',parentId:null},{id:'E',parentId:'R'}],regions:[{id:'R',parentId:null}],edges:[{id:'e1',source:'A',target:'B'},{id:'e2',source:'B',target:'C'},{id:'e3',source:'B',target:'E'},{id:'e4',source:'C',target:'D'},{id:'e5',source:'E',target:'D'},{id:'e6',source:'C',target:'B'}]};
